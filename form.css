@@ -6,6 +6,7 @@
 }
 body{
     background-color: hsl(0, 100%, 74%) ;
+    background-image: url("./design/mobile-design.jpg");
     color:white;
     font-size: 16px;
     font-family: 'Poppins';
@@ -88,6 +89,9 @@ input[type=text],[type=email],[type=password] {
     font-weight: bold;
   }
  @media screen and (max-width:375px){
+     body{
+        background-image: url("./image/bg-intro-mobile.png");
+     }
     .text{
         width: 100%;  
        
@@ -108,6 +112,9 @@ input[type=text],[type=email],[type=password] {
 
  }
  @media screen and (max-width:1440px){
+     body{
+        background-image: url("./image/bg-intro-desktop.png");
+     }
     .text{
         width: 100%;  
        
