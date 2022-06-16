@@ -20,6 +20,7 @@ main{
 .text{
     width: 50%;  
     text-align: center;
+ 
 }
 .text h3{
     margin-top: 40px;
@@ -42,6 +43,7 @@ main{
     margin-bottom: 15px;
     text-align: center;
     border-radius: 8px;
+  
 }
 .form{
     width:50%;
@@ -50,6 +52,7 @@ main{
     background-color: white;
     border-radius: 10px;
     padding-top: 20px;
+   
 }
 .form p{
     color:black;
@@ -111,27 +114,40 @@ input[type=text],[type=email],[type=password] {
     }
 
  }
- @media screen and (max-width:1440px){
+ @media screen and (max-width:1440px) and (min-width:376px){
      body{
         background-image: url("./image/bg-intro-desktop.png");
      }
+     main{
+        padding-top:350px;
+        display: grid;
+        grid-template-areas: 'gtext gblue'
+                             'gtext gform'
+                             'gtext gform'                           'gtext gform';
+     }
     .text{
+        padding-top:150px;
+        margin-right: 10px;
         width: 100%;  
+        grid-area: gtext;
        
     }
     .blue-box{
       
         width:100%;
+        grid-area: gblue;
       
     }
     .form{
         width:100%;
         height: 500px;
+        grid-area: gform;
        
     }
     .form p{
-        padding-left:50px;
+        padding-left:20px;
     }
+    
 
  }
   
